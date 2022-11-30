@@ -1,0 +1,66 @@
+<!doctype html> <!-- HTML 5 doctype -->
+<html lang="pt">
+
+<head>
+  <!-- Description meta tags -->
+  <meta charset="utf-8">
+  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="O Observatório Covid-19 BR é uma iniciativa independente com o desejo de disseminar informações de qualidade sobre o coronavírus, baseada em dados científicos atualizados.">
+  <title>Estados · Observatório Covid-19 BR</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://covid19br.github.io/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="https://covid19br.github.io/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://covid19br.github.io/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://covid19br.github.io/img/favicons/manifest.json">
+  <link rel="icon" href="https://covid19br.github.io/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="https://covid19br.github.io/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#007bff">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observatório Covid-19 BR">
+  <meta name="twitter:description"
+    content="Grupo de cientistas brasileiros com um objetivo: espalhar ciência e conter o vírus!">
+  <meta name="twitter:image" content="https://covid19br.github.io/img/favicons/observatorio-social-estados.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://covid19br.github.io">
+  <meta property="og:title" content="Observatório Covid-19 BR">
+  <meta property="og:description"
+    content="Grupo de cientistas brasileiros com um objetivo: espalhar ciência e conter o vírus!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://covid19br.github.io/img/favicons/observatorio-social-estados.png">
+  <meta property="og:image:secure_url" content="https://covid19br.github.io/img/favicons/observatorio-social-estados.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+
+<body>
+    <script>
+        var urlParams;
+        (window.onpopstate = function () {
+            var match,
+                pl     = /\+/g,  // Regex for replacing addition symbol with a space
+                search = /([^&=]+)=?([^&]*)/g,
+                decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+                query  = window.location.search.substring(1);
+
+            urlParams = {};
+            while (match = search.exec(query))
+            urlParams[decode(match[1])] = decode(match[2]);
+        })();
+        
+        if("uf" in urlParams) {
+            var url = "./estados.html?uf="+urlParams['uf'];
+            window.location.replace(url);
+        }
+        else {
+            window.location.replace("./estados.html");
+        }
+    </script>
+</body>
+</html>

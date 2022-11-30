@@ -1,0 +1,726 @@
+<!doctype html> <!-- HTML 5 doctype -->
+<html lang="pt">
+
+<head>
+  <!-- Description meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="O Observatório Covid-19 BR é uma iniciativa independente com o desejo de disseminar informações de qualidade sobre o coronavírus, baseada em dados científicos atualizados.">
+  <title>Perguntas · Observatório Covid-19 BR</title>
+
+  <!-- Bootstrap CSS via BootstrapCDN -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Custom Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Observatorio CSS -->
+  <link href="./css/global.css?ver=3.02" rel="stylesheet">
+  <link href="./css/accordion.css?ver=2.00" rel="stylesheet">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="https://covid19br.github.io/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="https://covid19br.github.io/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="https://covid19br.github.io/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="https://covid19br.github.io/img/favicons/manifest.json">
+  <link rel="icon" href="https://covid19br.github.io/img/favicons/favicon.ico">
+  <meta name="msapplication-config" content="https://covid19br.github.io/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#007bff">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Observatório Covid-19 BR">
+  <meta name="twitter:description"
+    content="Grupo de cientistas brasileiros com um objetivo: espalhar ciência e conter o vírus!">
+  <meta name="twitter:image" content="https://covid19br.github.io/img/favicons/observatorio-social-perguntas.png">
+
+  <!-- Facebook -->
+  <meta property="og:url" content="https://covid19br.github.io">
+  <meta property="og:title" content="Observatório Covid-19 BR">
+  <meta property="og:description"
+    content="Grupo de cientistas brasileiros com um objetivo: espalhar ciência e conter o vírus!">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="http://covid19br.github.io/img/favicons/observatorio-social-perguntas.png">
+  <meta property="og:image:secure_url" content="https://covid19br.github.io/img/favicons/observatorio-social-perguntas.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+</head>
+
+<body>
+  <!-- Barra Superior -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <!-- BOTAO DO MENU -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- LOGO -->
+    <a class="navbar-brand" href="https://covid19br.github.io">
+      <img class="navbar-logo" src="./img/logo.svg"></img> <!-- OBSERV.LOGO.IMAGEM -->
+    </a>
+
+    <!-- DESTAQUE -->
+    <div class="nav-item destaque" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="#">
+        Perguntas Comuns
+      </a>
+    </div>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./estados?uf=br">Estados</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./municipios?aba=aba1">Municípios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./drs">DRS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./cenarios">Cenários</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./analises">Análises</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Perguntas Comuns</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./informacoes">Informações Técnicas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./midia">Reportagens</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./sobre">Sobre</a>
+        </li>
+        <!-- MENU.ITEM -->
+      </ul>
+    </div>
+
+  </nav>
+
+  <!-- Titulo Principal + Abas -->
+  <div class="container-fluid main-title-bg mb-2">
+
+    <!-- PAGE.TITLE -->
+    <div class="main-title">
+        <h1 class="display" id="page-title">Perguntas Comuns</h1>
+        <small class="page-subtitle ml-0" style="margin-top: -5px;">Última revisão em 27 de abril, 2020 (08:02, Horário de Brasília) </small>
+        <p class="text-justify mt-4 ml-0">Respostas da nossa equipe para algumas das principais perguntas sobre COVID-19.
+        </p>
+    </div>
+
+    <!-- Separator -->
+    <hr class="my-4" style="margin-left: 1.3rem;"> 
+
+    <!-- Footer -->
+    <div class="mt-4 pb-2" style="margin-left: 1.3rem;">
+      <img src="img/license_cc.svg" width="13px" class="m-0">
+      <small class="page-subtitle">
+          <a class="text-reset" href="https://creativecommons.org/licenses/by-nc/4.0/deed.pt_BR" target="_blank" rel="noopener">Reuse</a>
+      </small>
+      <small class="page-subtitle ml-1 mr-1">·</small>
+      <img src="img/icon_github.svg" width="13px">
+      <small class="page-subtitle">
+          <a class="text-reset" href="https://github.com/covid19br/covid19br.github.io" target="_blank" rel="noopener">Contribua</a>
+      </small>
+  </div>
+
+  </div>
+
+  <!-- Cards -->
+
+  <div class="card-deck">
+    <!-- COLUMNS.NUM -->
+    <!-- NEW.CARD -->
+
+    <!-- TERMOS.CARD -->
+    <div class="card background-light">
+      <div class="card-body">
+
+        <!-- CARD.HEADER -->
+        <div class="media">
+          <div class="media-body">
+            <h5 class="card-title mb-3"><span class="blue-accent-bottom">Termos Comuns</span></h5> <!-- CARD.TITLE.TEXT -->
+            <p class="card-text">Entenda um pouco mais sobre os termos ao tratar sobre o coronavírus</p>
+            <!-- CARD.TITLE.DESCRIPTION -->
+          </div>
+        </div>
+
+        <!-- CARD.ACCORDION -->
+        <div class="accordion" id="accordionTermos">
+          <!-- PERGUNTA.1 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Qual a diferença entre uma epidemia e uma pandemia?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionTermos">
+              <div class="card-body">
+                <p>
+                  Uma <b>epidemia</b> é um <b>aumento repentino de uma doença</b> que acomete um grande número de
+                  pessoas em um curto período de
+                  tempo, ou seja, apresenta uma rápida disseminação - em contraste com as endemias, que se estendem por
+                  longos períodos,
+                  são típicas e frequentes em alguma região específica, e podem até ser sazonais, como a malária na
+                  Amazônia. Surtos
+                  epidêmicos são os momentos de aumento dentro de uma região delimitada.
+                </p>
+                <p>
+                  Uma epidemia ganha o status de <b>pandemia</b>, quando a região afetada passa a <b>englobar grandes
+                    extensões</b>, com diferentes
+                  países e continentes. Um exemplo de pandemia é a Gripe Suína (H1N1, em 2009), que era uma pandemia que
+                  eventualmente
+                  se transformou em endemia.
+                </p>
+                <p>
+                  Em geral, as <b>epidemias são causadas pela chegada de novos agentes etiológicos</b> (os causadores de
+                  doenças, como alguns
+                  vírus e bactérias) em um local. Nestas situações, toda a população é suscetível a se contaminar porque
+                  não teve
+                  contato com a doença antes. Exemplos de epidemias conhecidas aos brasileiros são Zika e Chikungunya.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.2 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+                  O que é uma curva exponencial?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTermos">
+              <div class="card-body">
+                <p>
+                  O crescimento <b>exponencial</b> é um <b>crescimento muito rápido</b>, cujo lema é <i>“quanto mais se
+                    tem, mais se cresce”</i>. No caso de
+                  epidemias, isso significa: <b>quanto mais pessoas infectadas, mais pessoas se infectam</b>. Outro
+                  exemplo clássico de
+                  crescimento exponencial é o crescimento das populações de seres vivos, pela reprodução. Por exemplo,
+                  para seres que se
+                  reproduzem assexuadamente, como as bactérias, cada célula se divide e gera duas novas bactérias. Dessa
+                  forma, o número
+                  de bactérias duplica a cada reprodução e, portanto, quanto mais bactérias existem, mais bactérias são
+                  geradas.
+                </p>
+                <p>
+                  <b>Em epidemias, a fase de crescimento exponencial tem um limite</b>, pois as pessoas já infectadas
+                  ganham imunidade
+                  e então as pessoas que o vírus consegue infectar, chamadas de infectáveis, começam a ficar escassas.
+                  Assim, conforme
+                  a população de infectáveis diminui, ocorre a <b>redução do contato entre infectantes e
+                    infectáveis</b> e a <b>epidemia começa a frear</b>, atingindo o pico quando o número de novos
+                  infectados for igual ao número de
+                  pessoas imunizadas (também chamadas de “recuperadas”) no mesmo dia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.3 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                  aria-expanded="false" aria-controls="collapseThree">
+                  O que significa “achatar a curva”?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTermos">
+              <div class="card-body">
+                <p>
+                  <b>Achatar a curva</b> significa <b>diminuir a velocidade de crescimento</b> da curva exponencial de
+                  infectados.
+                  Apesar do comportamento da curva epidêmica ser sempre semelhante, o quão rápido ela cresce pode ser
+                  controlado. O
+                  número de contatos que uma pessoa infectada tem com suscetível é determinante para o quão rápido
+                  cresce a curva.
+                  Por isso <b>o isolamento social é importante</b> - pois reduz o número de contatos físicos entre um
+                  possível infectado e um suscetível. A diminuição do número de novos casos por dia pode ocorrer de duas
+                  formas:</p>
+                <ol>
+                  <li>Por meio da redução do contato entre as pessoas de forma geral</li>
+                  <li>Porque o número de susceptíveis está baixo, e neste caso a maioria dos contatos estão ocorrendo
+                    entre pessoas que já tiveram a doença.</li>
+                </ol>
+                <p>
+                  Para parar uma epidemia
+                  através do caso 2, o número de pessoas que já tiveram a doença deve ser o mesmo até o pico,
+                  independente do tempo
+                  que leva para atingi-lo. Agora, ao frear a epidemia com o caso 1, podemos reduzir sim o número total
+                  de pessoas que
+                  já tiveram a doença. Em qualquer das opções, <b>o achatamento da curva resulta na redução do número de
+                    doentes
+                    simultâneos</b>, ocorrendo de forma novas infecções sejam mais diluídas ao longo do tempo,
+                  <b>garantindo que o sistema médico
+                    tenha capacidade suficiente para atender à todos</b> com qualidade e rapidez.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.4 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                  aria-expanded="false" aria-controls="collapseFour">
+                  Qual a diferença entre o isolamento horizontal e o isolamento vertical?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionTermos">
+              <div class="card-body">
+                <p>
+                  O <b>isolamento horizontal</b> é quando <b>reduzimos o contato entre todas as pessoas</b>, ao passo
+                  que o <b>isolamento vertical</b> é
+                  quando <b>reduzimos o contato entre pessoas do grupo de risco</b> e a grande massa da população -
+                  permitindo então que o
+                  vírus se espalhe fora do grupo de risco.</p>
+                <p>
+                  Os dados de países como Itália, Espanha e China já mostraram a <b>eficácia do
+                    isolamento horizontal</b> para frear a epidemia, sendo que quanto mais cedo ele é adotado, mais
+                  eficaz é. Já <b>o isolamento
+                    vertical nunca foi colocado em prática</b>. No Brasil, por exemplo, segundo o IBGE, 60% dos idosos
+                  brasileiros moram com
+                  até duas pessoas e 25% com três ou mais pessoas, sendo portanto difícil isolá-los do restante da
+                  população.
+                  Ressaltando, ainda, que mesmo fora do grupo de risco, há casos graves, necessidade de hospitalização e
+                  mortes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NEW.CARD -->
+
+    <!-- LOCAL.CARD -->
+    <div class="card background-light">
+      <div class="card-body">
+
+        <!-- CARD.HEADER -->
+        <div class="media">
+          <div class="media-body">
+            <h5 class="card-title mb-3"><span class="blue-accent-bottom">Comportamento da Epidemia</span></h5> <!-- CARD.TITLE.TEXT -->
+            <p class="card-text">Quais são os fatores que influenciam o comportamento da epidemia em diferente lugares?</p>
+            <!-- CARD.TITLE.DESCRIPTION -->
+          </div>
+        </div>
+
+        <!-- CARD.ACCORDION -->
+        <div class="accordion" id="accordionComportamento">
+          <!-- PERGUNTA.1 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse"
+                  data-target="#collapseComportamentoOne" aria-expanded="false"
+                  aria-controls="collapseComportamentoOne">
+                  Qual o padrão das epidemias e o que são projeções epidemiológicas?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapseComportamentoOne" class="collapse" aria-labelledby="headingOne"
+              data-parent="#accordionComportamento">
+              <div class="card-body">
+                <p>
+                  <b>Todas as epidemias seguem um padrão</b>, chamado “curva epidêmica”. Na caso de uma pandemia, esse
+                  padrão se repete em cada
+                  novo foco. Do ponto de vista matemático, <b>uma pandemia é o conjunto de várias epidemias ocorrendo ao
+                    mesmo tempo</b> em
+                  diferentes lugares. A curva epidêmica mostra um aumento exponencial de casos no início, o que é muito
+                  rápido. Após
+                  algum tempo, a curva satura (gerando o “pico”), e, finalmente, decresce.
+                </p>
+                <p>
+                  Previsões epidemiológicas de curto prazo, como as que esboçamos na nossa página inicial, assumem que
+                  esse
+                  comportamento vai se manter pelos próximos cinco dias com as características dos últimos cinco dias
+                  observados.
+                </p>
+                <p>
+                  Leia mais <a
+                    href="https://g1.globo.com/bemestar/coronavirus/noticia/2020/03/31/crescimento-exponencial-e-curva-epidemica-entenda-os-principais-conceitos-matematicos-que-explicam-a-pandemia-de-coronavirus.ghtml"
+                    target="_blank" rel="noopener">em nossa entrevista para o G1</a> sobre o comportamento das curvas
+                  epidêmicas para a população em geral.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.2 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseComportamentoTwo" aria-expanded="false"
+                  aria-controls="collapseComportamentoTwo">
+                  Como o clima influencia a dinâmica da doença?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseComportamentoTwo" class="collapse" aria-labelledby="headingTwo"
+              data-parent="#accordionComportamento">
+              <div class="card-body">
+                <p>
+                  <b>Não há indícios que o clima altere a velocidade de contágio e disseminação da doença de forma
+                    relevante.</b> Nosso
+                  acompanhamento do início da epidemia no Brasil mostra que as velocidades iniciais da doença aqui foram
+                  semelhantes às
+                  da Espanha e Itália, sendo que os climas são opostos nos hemisférios.</p>
+                <p class="mb-0">“Por uma série de razões históricas, muitos países com menos recursos e piores
+                  condições sócio-econômicas (que por sua vez levam a más condições sanitárias e piores condições
+                  nutricionais das
+                  pessoas), estão nas regiões tropicais do planeta. Esses problemas facilmente neutralizariam qualquer
+                  efeito climático
+                  e de sazonalidade potencial em escalas mais locais, como menores taxas de sobrevivência do vírus
+                  exposto ao sol e alta
+                  temperatura.”</p>
+                <div class="blockquote-footer text-right">José Alexandre F. Diniz Filho, professor da UFG em <a
+                    href="https://www.blogalexdiniz.com/post/condições-climáticas-não-explicam-a-variação-nas-taxas-de-crescimento-de-covid19-no-mundo"
+                    target="_blank" rel="noopener" title="Source Title">“Condições climáticas não explicam a variação
+                    nas taxas de crescimento de Covid19 no
+                    mundo”</a></div>
+                <p class="mt-2">
+                  Quanto <b>à vinda do inverno</b>, é necessário se atentar que este é o período típico de outras
+                  doenças, como
+                  dengue, gripe sazonal, asma e bronquite que também demandam atenção hospitalar e, por isso, <b>podem
+                    sobrecarregar ainda mais o sistema de saúde nacional.</b>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.3 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseComportamentoThree" aria-expanded="false"
+                  aria-controls="collapseComportamentoThree">
+                  O número de habitantes da região influencia na dinâmica da epidemia nesse lugar?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseComportamentoThree" class="collapse" aria-labelledby="headingThree"
+              data-parent="#accordionComportamento">
+              <div class="card-body">
+                <p>
+                  O <b>número de habitantes</b> de um região influencia o momento de saturação da curva, isto é,
+                  <b>determina quando
+                    atingiremos o pico</b>. Porém, <b>no começo da epidemia</b>, durante a fase exponencial, esse <b>não
+                    é um fator
+                    relevante</b>. Isso porque o número de contatos que um infectante tem no seu dia-a-dia depende das
+                  relações dele, e não da densidade de habitantes no local. Alguns fatores, como <b>tamanho médio das
+                    famílias (ou seja, características da estrutura da sociedade), impactam na velocidade de
+                    contágio</b>.
+                </p>
+                <p>Portanto, <b>há preocupação sobre a dinâmica da epidemia em comunidades e favelas de grandes
+                    metrópoles</b>,
+                  pois é onde um grande número de pessoas moram juntas e próximas a outras famílias. Outras fatores,
+                  como a distribuição etária da população, impactam no cálculo de pessoas no grupo de risco e em
+                  projeções sobre a possível utilização de hospitais.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.4 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapseComportamentoFour" aria-expanded="false"
+                  aria-controls="collapseComportamentoFour">
+                  Como os estudos científicos contribuem com as tomadas de decisão feita pelos governantes no
+                  Brasil?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseComportamentoFour" class="collapse" aria-labelledby="headingFour"
+              data-parent="#accordionComportamento">
+              <div class="card-body">
+                <p>
+                  O <b>Observatório</b> atua fornecendo curadoria científica para todos os <b>gabinetes de crise</b> que
+                  nos procuram, e
+                  <b>procuramos ajudar ao máximo para que as decisões políticas e estratégicas sejam tomadas com
+                    fundamentos científicos</b>. A ciência da epidemiologia é um campo extremamente interdisciplinar,
+                  que une
+                  médicos, biólogos, matemáticos, físicos, entre outros cientistas. O espírito colaborativo do
+                  Observatório agrega pessoas de diferentes áreas que trabalham com assuntos ou técnicas semelhantes nas
+                  suas pesquisas. <b>Algumas informações podem ser sensíveis e por isso optamos por não divulgá-las
+                    abertamente no site</b>. Porém estamos diariamente aprimorando e realizando diferentes análises para
+                  auxiliar as autoridades.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NEW.CARD -->
+  </div>
+
+  <div class="card-columns one ml-lg-4">
+    <!-- NEW.CARD -->
+
+    <!-- PESQUISA.CARD -->
+    <div class="card background-light">
+      <div class="card-body">
+
+        <!-- CARD.HEADER -->
+        <div class="media">
+          <div class="media-body">
+            <h5 class="card-title mb-3"><span class="blue-accent-bottom">Pesquisa Científica</span></h5> <!-- CARD.TITLE.TEXT -->
+            <p class="card-text">Como é feita a pesquisa sobre a epidemia do coronavírus?</p>
+            <!-- CARD.TITLE.DESCRIPTION -->
+          </div>
+        </div>
+
+        <!-- CARD.ACCORDION -->
+        <div class="accordion" id="accordionPesquisa">
+          <!-- PERGUNTA.1 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapsePesquisaOne"
+                  aria-expanded="false" aria-controls="collapsePesquisaOne">
+                  O que são “notificações”?
+                </button>
+              </h2>
+            </div>
+
+            <div id="collapsePesquisaOne" class="collapse" aria-labelledby="headingOne"
+              data-parent="#accordionPesquisa">
+              <div class="card-body">
+                <p>
+                  <b>Notificações</b>, dentro do sistema oficial de vigilância de saúde de um país, são os <b>avisos
+                    realizados de
+                    casos de uma determinada doença</b>. A esses casos positivos para a doença estudada chamamos de
+                  “casos
+                  notificados”, em oposição aos casos de enfermos que acabam não descobertos ou registrados.
+                </p>
+                <p>
+                  A notificação é <a
+                    href="https://portalarquivos2.saude.gov.br/images/pdf/2018/abril/25/Portaria-n---2014-de-17--Fevereiro-2016.pdf"
+                    target="_blank" rel="noopener">obrigatória por lei</a> para muitas doenças. Esses dados são
+                  recolhidos em hospitais e por
+                  agentes de saúde pública nos municípios e então passados para os órgãos e secretarias responsáveis no
+                  estado, para enfim serem compilados pela ANVISA (Agência Nacional de Vigilância Sanitária) e
+                  Ministério da Saúde , em âmbito nacional. Esse sistema de recolhimento de números de casos notificados
+                  é importante em qualquer cidade ou país para agir na prevenção e controle das diferentes doenças.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.2 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapsePesquisaTwo" aria-expanded="false" aria-controls="collapsePesquisaTwo">
+                  Qual a diferença entre os casos notificados dos casos reais?
+                </button>
+              </h2>
+            </div>
+            <div id="collapsePesquisaTwo" class="collapse" aria-labelledby="headingTwo"
+              data-parent="#accordionPesquisa">
+              <div class="card-body">
+                <p>
+                  No caso da atual pandemia, os casos notificados de COVID-19 são as pessoas que fizeram o exame para
+                  detectar o vírus ou o seu anticorpo no seu organismo e obtiveram um resultado positivo, e portanto
+                  são casos confirmados de COVID-19. <B>O número de casos reais é maior do que o número de casos
+                    notificados</B>, devido a dois conceitos:
+                </p>
+                <ol>
+                  <li>a subnotificação, ou seja, escolhe-se testar em apenas uma parcela da população, que no caso do
+                    Brasil são os casos graves e os de profissionais da saúde. Pessoas assintomáticas, por exemplo,
+                    não são testadas e, portanto, não entram para o banco de dados de casos notificados. Esse é uma
+                    escolha consciente do modelo de vigilância adotado;</li>
+                  <li>existem atrasos na notificação, pois há o tempo entre o contágio e o aparecimento de sintomas
+                    (chamado de tempo de incubação), o tempo entre os primeiro sintomas e ir no médico, e finalmente o
+                    tempo para sair o resultado do exame.</li>
+                </ol>
+                <p>
+                  Tudo isso faz com que o número de confirmados hoje seja um retrato do passado, do número de pessoas
+                  que foram contaminados há vários dias.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.3 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapsePesquisaThree" aria-expanded="false" aria-controls="collapsePesquisaThree">
+                  De onde vêm os dados utilizados para análise em epidemias em um país?
+                </button>
+              </h2>
+            </div>
+            <div id="collapsePesquisaThree" class="collapse" aria-labelledby="headingThree"
+              data-parent="#accordionPesquisa">
+              <div class="card-body">
+                <p>
+                  Nós usamos dados do <b>Ministério da Saúde</b> para o Brasil e seus estados, que estão disponíveis no
+                  <a href="" target="_blank" rel="noopener">Painel
+                    Coronavírus</a>. Para comparar com outros países do mundo, nós usamos os dados do <a
+                    href="https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data/csse_covid_19_time_series"
+                    target="_blank" rel="noopener">Repositório John Hopkins
+                    University</a>. Ambos os dados são abertos ao público, assim como todas as nossas
+                  análises têm código acessível e podem ser replicadas por qualquer pesquisador que deseje estudá-las.
+                  Esse é o espírito de ciência colaborativa e aberta à verificação que defendemos!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.4 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingFour">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapsePesquisaFour" aria-expanded="false" aria-controls="collapsePesquisaFour">
+                  Podemos prever com certeza quando será o pico de casos em uma epidemia e quando ela terminará?
+                </button>
+              </h2>
+            </div>
+            <div id="collapsePesquisaFour" class="collapse" aria-labelledby="headingFour"
+              data-parent="#accordionPesquisa">
+              <div class="card-body">
+                <p>
+                  <b>Previsões de médio e longo prazo</b> necessitam de um modelo epidemiológico, o qual deve assumir
+                  hipóteses
+                  que <b>ainda não são claras para uma doença recente como a COVID-19</b>. Um modelo epidemiológico
+                  matemático
+                  é um conjunto de equações que descreve os elementos-chave da epidemia. Muitos desses elementos nós
+                  ainda não conhecemos por se tratar de uma doença recente, como por exemplo se as pessoas adquirem
+                  imunidade permanente ou temporária, como na gripe comum. Alguns outros, por exemplo, dependem da
+                  resposta da população e do governo, e são difíceis de prever.</p>
+                </p>
+                <p>
+                  Portanto, prever o pico e o término da
+                  epidemia é algo que pode ser influenciado por diversos fatores que impactam na dinâmica da doença.
+                  Estes fatores podem ter um efeito, por menor que seja, ampliado exponencialmente. Levando isso em
+                  consideração, não julgamos pertinente tentar fazer estimativas de longo e médio prazo para uma doença
+                  cujos conhecimentos estão sendo aprendidos a cada dia.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PERGUNTA.5 -->
+          <div class="card background-light">
+            <div class="card-header" id="headingFive">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                  data-target="#collapsePesquisaFive" aria-expanded="false" aria-controls="collapsePesquisaFive">
+                  Porque usamos gráficos em escala logarítmica? Quais as vantagens e desvantagens dessa visualização?
+                </button>
+              </h2>
+            </div>
+            <div id="collapsePesquisaFive" class="collapse" aria-labelledby="headingFive"
+              data-parent="#accordionPesquisa">
+              <div class="card-body">
+                <p>
+                  A escala logarítmica relativiza a quantidade de novos casos. Neste tipo de escala, podemos ver que um
+                  aumento de 10 novos casos numa população que tem 10 casos (ou seja, quando número de casos aumenta
+                  100%) é muito mais grave do que se ter 10 novos casos numa população que já tem 1000 casos (ou seja,
+                  um aumento de 0,1%). Desta forma, a inclinação em um gráfico em escala logarítmica está relacionada
+                  com o aumento relativo no número de casos. Por este motivo, utiliza-se essa escala para ver o
+                  comportamento das curvas epidêmicas. </p>
+                <p>Além disso, <b>uma curva exponencial em escala logarítmica é uma
+                    reta, o que facilita a visualização</b>. No caso de uma epidemia de curva exponencial representada
+                  em
+                  escala logarítmica podemos olhar para a inclinação dessa curva para entender a velocidade com que a
+                  doença se espalha, e quanto mais íngreme essa reta, maior a velocidade de crescimento do número de
+                  casos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- NEW.CARD -->
+  </div>
+
+  <!-- Footer -->
+  <footer class="container-fluid">
+    <!-- FOOTER.ITEM -->
+    <div class="footer-content">
+      <img src="img/icon_github.svg" width="16px">
+      <small class="mb-0 ml-1"><a href="https://github.com/covid19br/covid19br.github.io" target="_blank" rel="noopener"
+          class="text-reset">Source Code</a></small>
+    </div>
+    
+    <!-- FOOTER.ITEM -->
+    <div class="footer-content">
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">
+        <img alt="Licença Creative Commons" height="20px" style="margin-right: .35rem;" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"/>
+      </a>
+      <small id="license">
+        <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Observatório Covid-19 BR</span> está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">Creative Commons - Atribuição-NãoComercial 4.0 Internacional</a>.
+      </small>
+    </div>
+    
+  </footer>
+
+  <!-- JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS via BootstrapCDN-->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="js/updateDate.js"></script>
+  <!-- Default Statcounter code for Observatório COVID-19 BR https://covid19br.github.io -->
+  <script>
+    var sc_project=12220607; 
+    var sc_invisible=1; 
+    var sc_security="18092bfd"; 
+  </script>
+  <script src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript>
+    <div class="statcounter">
+      <a title="Web Analytics Made Easy - StatCounter" href="https://statcounter.com/" target="_blank">
+        <img class="statcounter" src="https://c.statcounter.com/12220607/0/18092bfd/1/" alt="Web Analytics Made Easy - StatCounter">
+      </a>
+    </div>
+  </noscript>
+  <!-- End of Statcounter Code -->
+</body>
+
+</html>
